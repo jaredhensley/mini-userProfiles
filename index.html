@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>mini-user profiles</title>
+</head>
+
+<body ng-app="userProfiles" ng-controller="mainController">
+  <div ng-repeat="user in users">
+    {{user.first_name}} {{user.last_name}}
+    <img ng-src={{user.avatar}}>
+    <hr>
+  </div>
+
+  <!--scripts-->
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="controller.js"></script>
+  <script src="service.js"></script>
+
+</body>
+
+</html>
